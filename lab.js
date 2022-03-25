@@ -117,9 +117,14 @@ var listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
+// for (let i = 0; i < listOfNumbers.length; i++) {
+//   const element = listOfNumbers[i];
+//   if (element % 3 == 0) {
+//     console.log(`${element} is divisible by 3.`);
+//   }
+// }
 for (let i = 0; i < listOfNumbers.length; i++) {
-  const element = listOfNumbers[i];
-  if (element % 3 == 0) {
+  if (listOfNumbers[i] % 3 === 0) {
     console.log(`${element} is divisible by 3.`);
   }
 }
@@ -231,8 +236,4 @@ for (let i = 1; i <= 100; i++) {
   } else {
     console.log(`${i}`);
   }
-}
-
-for (let i = 5; i > -1; i--) {
-  console.log(i);
 }
